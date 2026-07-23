@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "MacBook Pro",
+      "price": 150000,
+      "image": "https://picsum.photos/300?1",
+      "description": "Apple laptop"
+    },
+    {
+      "id": 2,
+      "title": "iPhone 16",
+      "price": 95000,
+      "image": "https://picsum.photos/300?2",
+      "description": "Latest iPhone"
+    },
+    {
+      "id": 3,
+      "title": "Samsung Galaxy S25",
+      "price": 85000,
+      "image": "https://picsum.photos/300?3",
+      "description": "Samsung flagship"
+    },
+    {
+      "id": 4,
+      "title": "Dell XPS 15",
+      "price": 135000,
+      "image": "https://picsum.photos/300?4",
+      "description": "Premium Windows Laptop"
+    },
+    {
+      "id": 5,
+      "title": "Sony WH-1000XM5",
+      "price": 28000,
+      "image": "https://picsum.photos/300?5",
+      "description": "Noise Cancelling Headphones"
+    },
+    {
+      "id": 6,
+      "title": "iPad Air",
+      "price": 65000,
+      "image": "https://picsum.photos/300?6",
+      "description": "Apple Tablet"
+    },
+    {
+      "id": 7,
+      "title": "Apple Watch",
+      "price": 42000,
+      "image": "https://picsum.photos/300?7",
+      "description": "Smart Fitness Watch"
+    },
+    {
+      "id": 8,
+      "title": "Samsung Galaxy Tab",
+      "price": 48000,
+      "image": "https://picsum.photos/300?8",
+      "description": "Android Tablet"
+    }
+  ]
+}
