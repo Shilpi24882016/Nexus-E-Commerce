@@ -1,13 +1,22 @@
 import { useCart } from "../context/CartContext";
+import { useNavigate } from "react-router-dom";
 
 function Cart() {
   const { cart, dispatch } = useCart();
+  const navigate = useNavigate();
 
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   return (
     <div style={{ padding: "30px" }}>
       <h1>Shopping Cart</h1>
+
+      <button
+        onClick={() => navigate(-1)}
+        style={{ marginBottom: "20px", padding: "8px 12px" }}
+      >
+        Back
+      </button>
 
       {cart.length === 0 ? (
         <h2>Cart is Empty</h2>

@@ -1,60 +1,110 @@
 {
   "products": [
     {
-      "id": 1,
-      "title": "MacBook Pro",
-      "price": 150000,
-      "image": "https://picsum.photos/300?1",
-      "description": "Apple laptop"
-    },
-    {
-      "id": 2,
       "title": "iPhone 16",
-      "price": 95000,
-      "image": "https://picsum.photos/300?2",
-      "description": "Latest iPhone"
+      "price": 100000,
+      "image": "https://dummyimage.com/300x300/1a1a1a/ffffff&text=iPhone+16",
+      "description": "Latest iPhone",
+      "id": "2"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Samsung Galaxy S25",
       "price": 85000,
-      "image": "https://picsum.photos/300?3",
+      "image": "https://dummyimage.com/300x300/003366/ffffff&text=Galaxy+S25",
       "description": "Samsung flagship"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Dell XPS 15",
       "price": 135000,
-      "image": "https://picsum.photos/300?4",
+      "image": "https://dummyimage.com/300x300/0a4f7c/ffffff&text=Dell+XPS+15",
       "description": "Premium Windows Laptop"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Sony WH-1000XM5",
       "price": 28000,
-      "image": "https://picsum.photos/300?5",
+      "image": "https://dummyimage.com/300x300/000000/ffffff&text=WH-1000XM5",
       "description": "Noise Cancelling Headphones"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "iPad Air",
       "price": 65000,
-      "image": "https://picsum.photos/300?6",
+      "image": "https://dummyimage.com/300x300/666666/ffffff&text=iPad+Air",
       "description": "Apple Tablet"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Apple Watch",
       "price": 42000,
-      "image": "https://picsum.photos/300?7",
+      "image": "https://dummyimage.com/300x300/222222/ffffff&text=Apple+Watch",
       "description": "Smart Fitness Watch"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Samsung Galaxy Tab",
       "price": 48000,
-      "image": "https://picsum.photos/300?8",
+      "image": "https://dummyimage.com/300x300/004225/ffffff&text=Galaxy+Tab",
       "description": "Android Tablet"
+    },
+    {
+      "id": "9",
+      "title": "Google Pixel 8",
+      "price": 72000,
+      "image": "https://dummyimage.com/300x300/0f172a/ffffff&text=Pixel+8",
+      "description": "Google flagship phone"
+    },
+    {
+      "id": "10",
+      "title": "OnePlus 12",
+      "price": 59000,
+      "image": "https://dummyimage.com/300x300/111827/ffffff&text=OnePlus+12",
+      "description": "High performance Android phone"
+    },
+    {
+      "id": "11",
+      "title": "HP Spectre x360",
+      "price": 138000,
+      "image": "https://dummyimage.com/300x300/0b3d91/ffffff&text=HP+Spectre+x360",
+      "description": "Convertible premium laptop"
+    },
+    {
+      "id": "12",
+      "title": "Lenovo ThinkPad X1",
+      "price": 145000,
+      "image": "https://dummyimage.com/300x300/1f2937/ffffff&text=ThinkPad+X1",
+      "description": "Business ultrabook"
+    },
+    {
+      "id": "13",
+      "title": "Bose QuietComfort 45",
+      "price": 24000,
+      "image": "https://dummyimage.com/300x300/0f172a/ffffff&text=Bose+QC45",
+      "description": "Noise cancelling headphones"
+    },
+    {
+      "id": "14",
+      "title": "Beats Studio3",
+      "price": 22000,
+      "image": "https://dummyimage.com/300x300/3b82f6/ffffff&text=Beats+Studio3",
+      "description": "Wireless over-ear headphones"
+    },
+    {
+      "id": "15",
+      "title": "Fitbit Versa 4",
+      "price": 14000,
+      "image": "https://dummyimage.com/300x300/065f46/ffffff&text=Fitbit+Versa+4",
+      "description": "Fitness smartwatch"
+    },
+    {
+      "id": "16",
+      "title": "Garmin Fenix 7",
+      "price": 56000,
+      "image": "https://dummyimage.com/300x300/0b1226/ffffff&text=Garmin+Fenix+7",
+      "description": "Rugged multisport GPS watch"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
