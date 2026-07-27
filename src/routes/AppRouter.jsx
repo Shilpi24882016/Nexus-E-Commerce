@@ -4,13 +4,13 @@ import PublicLayout from "../layouts/PublicLayout";
 import AdminLayout from "../layouts/AdminLayout";
 import ProtectedRoute from "../components/ProtectedRoute";
 import Dashboard from "../pages/admin/Dashboard";
-import AddProduct from "../pages/admin/useAddProduct";
+import AddProduct from "../pages/admin/AddProduct";
+import EditProduct from "../pages/admin/EditProduct";
 
 import Home from "../pages/Home";
 import Products from "../pages/Products";
 import Cart from "../pages/Cart";
 import Login from "../pages/Login";
-// import EditProduct from "../pages/admin/EditProduct";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +55,10 @@ const router = createBrowserRouter([
         path: "add-product",
         element: <AddProduct />,
       },
+        {
+          path: "edit-product/:id",
+          element: <EditProduct />,
+        },
     ],
   },
 ]);

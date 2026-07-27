@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+const ADMIN_EMAIL = import.meta.env.VITE_ADMIN_EMAIL;
+const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD;
+
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -10,7 +13,14 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (email === "shilpi@nexus.com" && password === "shilpi@123") {
+    if (!ADMIN_EMAIL || !ADMIN_PASSWORD) {
+      alert(
+        "Admin credentials are not configured. Please add VITE_ADMIN_EMAIL and VITE_ADMIN_PASSWORD to your .env file."
+      );
+      return;
+    }
+
+    if (email === ADMIN_EMAIL && password === ADMIN_PASSWORD) {
       localStorage.setItem("isAdmin", "true");
       navigate("/admin");
     } else {
@@ -64,9 +74,6 @@ function Login() {
         >
           Login
         </button>
-        <p>for admin login: </p>
-        <p>Email: shilpi@nexus.com</p>
-        <p>Password: shilpi@123</p>
       </form>
     </div>
   );

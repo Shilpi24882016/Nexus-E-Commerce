@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { getProduct } from "../api/products";
+import { useCart } from "../context/CartContext";
 
 function ProductDetails() {
   const { id } = useParams();
@@ -14,6 +15,8 @@ function ProductDetails() {
     queryKey: ["product", id],
     queryFn: () => getProduct(id),
   });
+
+  const { dispatch } = useCart();
 
   if (isLoading) return <h2>Loading...</h2>;
 
@@ -29,7 +32,16 @@ function ProductDetails() {
 
       <p>{product.description}</p>
 
-      <button>Add To Cart</button>
+      <button
+        onClick={() =>
+          dispatch({
+            type: "ADD_TO_CART",
+            payload: product,
+          })
+        }
+      >
+        Add To Cart
+      </button>
     </div>
   );
 }
