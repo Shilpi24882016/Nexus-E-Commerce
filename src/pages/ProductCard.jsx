@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
+import { getProductImage } from "../utils/productImage";
 
 function ProductCard({ product }) {
   const { dispatch } = useCart();
@@ -14,7 +15,7 @@ function ProductCard({ product }) {
       }}
     >
       <img
-        src={product.image}
+        src={getProductImage(product)}
         alt={product.title}
         style={{
           width: "100%",

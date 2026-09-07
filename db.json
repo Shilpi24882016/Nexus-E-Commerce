@@ -104,6 +104,13 @@
       "price": 56000,
       "image": "https://dummyimage.com/300x300/0b1226/ffffff&text=Garmin+Fenix+7",
       "description": "Rugged multisport GPS watch"
+    },
+    {
+      "title": "werty",
+      "price": 234567,
+      "image": "https://dummyimage.com/300x300/4f46e5/ffffff&text=werty",
+      "description": "werxcer",
+      "id": "SZmMBRiZDOs"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

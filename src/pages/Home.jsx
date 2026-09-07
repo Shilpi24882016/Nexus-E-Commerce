@@ -25,10 +25,6 @@ function Home() {
             <Link to="/products">
               <button className="primary-btn">Shop Now</button>
             </Link>
-
-            <Link to="/products">
-              <button className="secondary-btn">Explore Products</button>
-            </Link>
           </div>
         </div>
       </section>
@@ -38,31 +34,42 @@ function Home() {
         <h2>Featured Categories</h2>
 
         <div className="category-grid">
-          <Link to="/products?category=Laptops" style={{ textDecoration: "none" }}>
+          <Link
+            to="/products?category=Laptops"
+            style={{ textDecoration: "none" }}
+          >
             <div className="category-card">
               💻
               <h3>Laptops</h3>
             </div>
           </Link>
 
-          <Link to="/products?category=Mobiles" style={{ textDecoration: "none" }}>
+          <Link
+            to="/products?category=Mobiles"
+            style={{ textDecoration: "none" }}
+          >
             <div className="category-card">
               📱
               <h3>Mobiles</h3>
             </div>
           </Link>
 
-          <Link to="/products?category=Accessories" style={{ textDecoration: "none" }}>
+          <Link
+            to="/products?category=Accessories"
+            style={{ textDecoration: "none" }}
+          >
             <div className="category-card">
               🎧
               <h3>Accessories</h3>
             </div>
           </Link>
 
-          <Link to="/products?category=Smart%20Watches" style={{ textDecoration: "none" }}>
+          <Link
+            to="/products?category=Smart%20Watches"
+            style={{ textDecoration: "none" }}
+          >
             <div className="category-card">
-              ⌚
-              <h3>Smart Watches</h3>
+              ⌚<h3>Smart Watches</h3>
             </div>
           </Link>
         </div>

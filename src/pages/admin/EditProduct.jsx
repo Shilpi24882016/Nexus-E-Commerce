@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { getProduct } from "../../api/products";
 import useUpdateProduct from "../../hooks/useUpdateProduct";
 import { useState, useEffect } from "react";
+import { getProductImage } from "../../utils/productImage";
 
 function EditProduct() {
   const { id } = useParams();
@@ -42,7 +43,7 @@ function EditProduct() {
       product: {
         title,
         price: Number(price),
-        image: image || product.image,
+        image: image || getProductImage({ title, image: product.image }),
         description,
       },
     };

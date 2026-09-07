@@ -27,20 +27,26 @@ function Products() {
   const normalizedSearchQuery = searchQuery.toLowerCase().trim();
   const filteredProducts = normalizedSearchQuery
     ? data.filter((product) =>
-        product.title.toLowerCase().startsWith(normalizedSearchQuery)
+        product.title.toLowerCase().startsWith(normalizedSearchQuery),
       )
     : category && categoryKeywords[category]
-    ? data.filter((product) => {
-        const text = `${product.title} ${product.description}`.toLowerCase();
-        return categoryKeywords[category].some((keyword) =>
-          text.includes(keyword)
-        );
-      })
-    : data;
+      ? data.filter((product) => {
+          const text = `${product.title} ${product.description}`.toLowerCase();
+          return categoryKeywords[category].some((keyword) =>
+            text.includes(keyword),
+          );
+        })
+      : data;
 
   return (
     <div style={{ padding: "20px" }}>
-      <div style={{ marginBottom: "20px" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginBottom: "24px",
+        }}
+      >
         <input
           type="text"
           placeholder="Search products by name"
@@ -48,10 +54,12 @@ function Products() {
           onChange={(e) => setSearchQuery(e.target.value)}
           style={{
             width: "100%",
-            maxWidth: "420px",
-            padding: "10px 14px",
+            maxWidth: "560px",
+            padding: "12px 16px",
+            fontSize: "1rem",
             border: "1px solid #ccc",
-            borderRadius: "8px",
+            borderRadius: "10px",
+            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.06)",
           }}
         />
       </div>
