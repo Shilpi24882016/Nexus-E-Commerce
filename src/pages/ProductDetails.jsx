@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { getProduct } from "../api/products";
 import { useCart } from "../context/CartContext";
+import { getProductImage } from "../utils/productImage";
 
 function ProductDetails() {
   const { id } = useParams();
@@ -24,7 +25,7 @@ function ProductDetails() {
 
   return (
     <div style={{ padding: "30px" }}>
-      <img src={product.image} alt={product.title} width="300" />
+      <img src={getProductImage(product)} alt={product.title} width="300" />
 
       <h1>{product.title}</h1>
 

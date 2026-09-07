@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useAddProduct from "./useAddProduct";
+import { getProductImage } from "../../utils/productImage";
 
 function AddProduct() {
   const [title, setTitle] = useState("");
@@ -17,7 +18,7 @@ function AddProduct() {
     const product = {
       title,
       price: Number(price),
-      image: image || "https://dummyimage.com/300x300/ddd/000&text=Product",
+      image: image || getProductImage({ title }),
       description,
     };
 

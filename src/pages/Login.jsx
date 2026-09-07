@@ -15,7 +15,7 @@ function Login() {
 
     if (!ADMIN_EMAIL || !ADMIN_PASSWORD) {
       alert(
-        "Admin credentials are not configured. Please add VITE_ADMIN_EMAIL and VITE_ADMIN_PASSWORD to your .env file."
+        "Admin credentials are not configured. Please add VITE_ADMIN_EMAIL and VITE_ADMIN_PASSWORD to your .env file.",
       );
       return;
     }
@@ -43,7 +43,7 @@ function Login() {
       <form onSubmit={handleSubmit}>
         <input
           type="email"
-          placeholder="Enter Email"
+          placeholder="Enter Email: shilpi@gmail.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           style={{
@@ -55,7 +55,7 @@ function Login() {
 
         <input
           type="password"
-          placeholder="Enter Password"
+          placeholder="Enter Password: 123456789"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           style={{
